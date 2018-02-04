@@ -12,8 +12,9 @@ gem 'rails', '~> 5.1.4'
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
 #
+# gem 'graphql'
 gem 'graphql', '~> 0.9.2'
-gem 'graphiql-rails', '~> 1.4.8'
+gem 'graphiql-rails', group: :development
 # gem 'devise','~> 4.4.1'
 # gem 'devise-jwt', '~> 0.5.5'
 # gem 'rack-cors'
