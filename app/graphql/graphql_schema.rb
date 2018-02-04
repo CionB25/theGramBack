@@ -31,6 +31,6 @@ UserType = GraphQL::ObjectType.define do
   end
 end
 
-QuerySchema = GraphQL::Schema.new(
+Schema = GraphQL::Schema.new(
   query: QueryType
 )
