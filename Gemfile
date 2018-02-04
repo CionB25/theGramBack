@@ -13,7 +13,7 @@ gem 'pg', '~> 0.18'
 # Use Puma as the app server
 #
 # gem 'graphql'
-gem 'graphql', '~> 0.9.2'
+gem 'graphql', '~> 1.7.9'
 gem 'graphiql-rails', group: :development
 # gem 'devise','~> 4.4.1'
 # gem 'devise-jwt', '~> 0.5.5'
@@ -57,3 +57,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'graphiql-rails', group: :development

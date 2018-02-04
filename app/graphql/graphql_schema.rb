@@ -7,6 +7,10 @@ QueryType = GraphQL::ObjectType.define do
     argument :id, !types.String
     resolve -> (root, args, ctx) {User.find_by(id: args[:id])}
   end
+
+  # field :post do
+  #   argument
+  # end
 end
 
 UserType = GraphQL::ObjectType.define do
@@ -27,6 +31,6 @@ UserType = GraphQL::ObjectType.define do
   end
 end
 
-Schema = GraphQL::Schema.new(
+QuerySchema = GraphQL::Schema.new(
   query: QueryType
 )
