@@ -15,6 +15,9 @@ module Types
     #   type -> { types[UserTypes] }
     #   resolve -> (user, args, ctx {user.followers})
     # end
+    # field :post, {!types[PostTypes]} do
+    #   resolve -> (user, args, ctx {Post.all})
+    # end
   end
 
 end

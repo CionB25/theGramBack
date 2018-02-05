@@ -7,7 +7,9 @@ module Types
     field :comment, !types.String
     field :id, !types.Int
   end
-
-    # field :user, !UserType
+    #
+    # field :user, !UserType do
+    #   resolve -> (user, args, ctx {user.id})
+    # end
 
 end
