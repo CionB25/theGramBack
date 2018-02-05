@@ -15,4 +15,9 @@ Types::QueryType = GraphQL::ObjectType.define do
     description "The current user"
     resolve -> (obj, args, cts) {  User.first }
   end
+
+  field :post, types[Types::PostType] do
+    description "Posts for current user"
+    resolve -> (obj, args, cts) { Post.all }
+  end
 end
