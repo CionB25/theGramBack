@@ -5,11 +5,16 @@ module Types
 
     field :image, !types.String
     field :comment, !types.String
-    field :id, !types.Int
-  end
-    #
-    # field :user, !UserType do
-    #   resolve -> (user, args, ctx {user.id})
+    # field :user, types[!UserType]
+    # field :user, types[!UserType] do
+    #   resolve -> (user, args, ctx) {}
     # end
+    # field :id, !types.Int
+  end
+
+  # global_id_field :id
+    #
+
+    # field :user, types[!UserType]
 
 end
