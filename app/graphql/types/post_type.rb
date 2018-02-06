@@ -10,6 +10,12 @@ module Types
     #   resolve -> (user, args, ctx) {}
     # end
     # field :id, !types.Int
+    field :microposts, types[MicropostType] do
+      resolve -> (micropost, args, ctx) { Micropost.all }
+    end
+    # field :post, types[PostType] do
+    #   resolve -> (user, args, ctx) {Post.where(["user_id =  1"])}
+    # end
   end
 
   # global_id_field :id

@@ -32,3 +32,11 @@ Post.create(comment: "Dreamweaver, Dreamcatcher", user_id: User.find_by(username
 Post.create(comment: "On my forearm, that's my foreshadow", user_id: User.find_by(username: "wise").id)
 Post.create(comment: "Phone ringing it's Ashley", user_id: User.find_by(username: "holly").id)
 Post.create(comment: "She want me to dig in her bone marrow", user_id: User.find_by(username: "vijay").id)
+
+Micropost.create(comment: "Nah. What. Yea.", post_id: 1, owner: "vijay")
+Micropost.create(comment: "Watch ya head!", post_id: 1, owner: "wise")
+Micropost.create(comment: "Flow drop like a ton of bricks", post_id: 1, owner: "aaron")
+Micropost.create(comment: "Foccacia bread", post_id: 3, owner: "holly")
+Micropost.create(comment: "How we stack dough", post_id: 4, owner: "vijay")
+Micropost.create(comment: "Funds or...", post_id: 2, owner: "wise")
+Micropost.create(comment: "Chips", post_id: 2, owner: "aaron")

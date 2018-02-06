@@ -23,4 +23,10 @@ Types::QueryType = GraphQL::ObjectType.define do
     description "Posts for current user"
     resolve -> (obj, args, cts) { Post.all }
   end
+
+  # field :micropost, types[Types::MicropostType] do
+  #   description "..."
+  #   resolve -> (obj, args, cts) { Micropost.all }
+  # end
+
 end
